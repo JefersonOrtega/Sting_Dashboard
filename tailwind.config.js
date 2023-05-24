@@ -1,9 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: ["class", '[data-theme="dark"]'],
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/*.{js,ts,jsx,tsx,mdx}",
+    "./src/common/**/*.{ts,tsx}",
   ],
   theme: {
     extend: {
@@ -21,9 +24,9 @@ module.exports = {
         popins: ["Poppins", "sans-serif"],
       },
       screens: {
-        sm: { max: "800px" },
-        md: { min: "800px" },
-        lg: { min: "1280px" },
+        // sm: { max: "800px" },
+        // md: { min: "800px" },
+        // lg: { min: "1280px" },
         // => @media (max-width: 639px) { ... }
       },
       backgroundImage: {
