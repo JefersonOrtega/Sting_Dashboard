@@ -1,4 +1,4 @@
-import "./globals.css";
+import "../styles/globals.css";
 
 export const metadata = {
   title: "Sting",
@@ -12,7 +12,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <main className="flex min-h-screen flex-col items-center justify-between p-24">
+        {children}
+        </main>
+      </body>
     </html>
   );
 }
